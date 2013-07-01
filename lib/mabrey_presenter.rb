@@ -15,7 +15,7 @@ class MabreyPresenter < Struct.new(:first_name)
     "#{first_name}@#{last_name}s.com"
   end
 
-  def gravatar(size=380)
+  def gravatar(size=390)
     "http://www.gravatar.com/avatar/#{Digest::MD5.hexdigest(email)}.jpg?s=#{size}"
   end
 
