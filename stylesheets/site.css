@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700);
 /* normalize.css v2.1.2 | MIT License | git.io/normalize */
 /* ==========================================================================
    HTML5 display definitions
@@ -367,7 +368,51 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-/* line 7, /Users/arron/code/mabreys.com/source/stylesheets/site.css.sass */
+/* line 3, /Users/arron/code/mabreys.com/source/stylesheets/typo.css.scss */
+body {
+  font: 14px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #777;
+  font-weight: 300; }
+
+/* line 10, /Users/arron/code/mabreys.com/source/stylesheets/typo.css.scss */
+h1, h2, h3, h4, h5, h6 {
+  color: #222;
+  margin: 0 0 20px; }
+
+/* line 15, /Users/arron/code/mabreys.com/source/stylesheets/typo.css.scss */
+p, ul, ol, table, pre, dl {
+  margin: 0 0 20px; }
+
+/* line 19, /Users/arron/code/mabreys.com/source/stylesheets/typo.css.scss */
+h1, h2, h3 {
+  line-height: 1.1; }
+
+/* line 23, /Users/arron/code/mabreys.com/source/stylesheets/typo.css.scss */
+h1 {
+  font-size: 28px; }
+
+/* line 27, /Users/arron/code/mabreys.com/source/stylesheets/typo.css.scss */
+h2 {
+  color: white; }
+
+/* line 31, /Users/arron/code/mabreys.com/source/stylesheets/typo.css.scss */
+h3, h4, h5, h6 {
+  color: #494949; }
+
+/* line 35, /Users/arron/code/mabreys.com/source/stylesheets/typo.css.scss */
+a {
+  color: #39c;
+  font-weight: 400;
+  text-decoration: none; }
+
+/* line 42, /Users/arron/code/mabreys.com/source/stylesheets/typo.css.scss */
+a small {
+  font-size: 11px;
+  color: #777;
+  margin-top: -0.6em;
+  display: block; }
+
+/* line 8, /Users/arron/code/mabreys.com/source/stylesheets/site.css.sass */
 html, body {
   width: 100%;
   height: 100%;
@@ -377,7 +422,7 @@ html, body {
   min-width: 340px;
   color: white; }
 
-/* line 17, /Users/arron/code/mabreys.com/source/stylesheets/site.css.sass */
+/* line 18, /Users/arron/code/mabreys.com/source/stylesheets/site.css.sass */
 .wrapper {
   -webkit-overflow-scrolling: touch;
   overflow-x: hidden;
@@ -386,7 +431,7 @@ html, body {
   height: 100%;
   position: relative; }
 
-/* line 25, /Users/arron/code/mabreys.com/source/stylesheets/site.css.sass */
+/* line 26, /Users/arron/code/mabreys.com/source/stylesheets/site.css.sass */
 .wallpaper {
   z-index: 100;
   -webkit-transform: translateZ(0);
@@ -399,10 +444,10 @@ html, body {
   position: absolute;
   padding: 3px; }
   @media screen and (min-width: 800px) {
-    /* line 25, /Users/arron/code/mabreys.com/source/stylesheets/site.css.sass */
+    /* line 26, /Users/arron/code/mabreys.com/source/stylesheets/site.css.sass */
     .wallpaper {
       width: 103%; } }
-  /* line 36, /Users/arron/code/mabreys.com/source/stylesheets/site.css.sass */
+  /* line 37, /Users/arron/code/mabreys.com/source/stylesheets/site.css.sass */
   .wallpaper img {
     -webkit-transform: translateZ(0);
     -moz-transform: translateZ(0);
@@ -424,10 +469,10 @@ html, body {
     -moz-transition-timing-function: easeInOutQuint;
     -o-transition-timing-function: easeInOutQuint;
     transition-timing-function: easeInOutQuint; }
-    /* line 48, /Users/arron/code/mabreys.com/source/stylesheets/site.css.sass */
+    /* line 49, /Users/arron/code/mabreys.com/source/stylesheets/site.css.sass */
     .wallpaper img.is-loading {
       opacity: 0; }
-    /* line 50, /Users/arron/code/mabreys.com/source/stylesheets/site.css.sass */
+    /* line 51, /Users/arron/code/mabreys.com/source/stylesheets/site.css.sass */
     .wallpaper img.is-loaded {
       opacity: 0.6;
       -webkit-transition-duration: 2600ms;
@@ -437,7 +482,7 @@ html, body {
       -webkit-filter: contrast(1.5) grayscale(100%);
       -moz-filter: contrast(1.5) grayscale(100%);
       filter: contrast(1.5) grayscale(100%); }
-      /* line 54, /Users/arron/code/mabreys.com/source/stylesheets/site.css.sass */
+      /* line 55, /Users/arron/code/mabreys.com/source/stylesheets/site.css.sass */
       .wallpaper img.is-loaded:hover {
         opacity: 0.9;
         -webkit-filter: contrast(1.6) grayscale(40%);
@@ -448,17 +493,20 @@ html, body {
         -o-transition-duration: 1000ms;
         transition-duration: 1000ms; }
 
-/* line 58, /Users/arron/code/mabreys.com/source/stylesheets/site.css.sass */
+/* line 59, /Users/arron/code/mabreys.com/source/stylesheets/site.css.sass */
 ul {
   margin-left: 0;
   padding: 0;
   list-style: none; }
 
-/* line 62, /Users/arron/code/mabreys.com/source/stylesheets/site.css.sass */
+/* line 63, /Users/arron/code/mabreys.com/source/stylesheets/site.css.sass */
 a {
   color: white; }
+  /* line 65, /Users/arron/code/mabreys.com/source/stylesheets/site.css.sass */
+  a:hover {
+    text-decoration: underline; }
 
-/* line 64, /Users/arron/code/mabreys.com/source/stylesheets/site.css.sass */
+/* line 67, /Users/arron/code/mabreys.com/source/stylesheets/site.css.sass */
 .content {
   zoom: 1;
   background-color: rgba(0, 0, 0, 0.65);
@@ -477,7 +525,7 @@ a {
   /* line 9, /Users/arron/code/mabreys.com/source/stylesheets/clearfix.css.scss */
   .content:after {
     clear: both; }
-  /* line 74, /Users/arron/code/mabreys.com/source/stylesheets/site.css.sass */
+  /* line 77, /Users/arron/code/mabreys.com/source/stylesheets/site.css.sass */
   .content .mabreys {
     zoom: 1;
     position: relative;
@@ -493,17 +541,34 @@ a {
     /* line 9, /Users/arron/code/mabreys.com/source/stylesheets/clearfix.css.scss */
     .content .mabreys:after {
       clear: both; }
-    /* line 81, /Users/arron/code/mabreys.com/source/stylesheets/site.css.sass */
+    /* line 84, /Users/arron/code/mabreys.com/source/stylesheets/site.css.sass */
     .content .mabreys article {
-      background-color: rgba(255, 255, 255, 0.3);
+      background-color: rgba(255, 255, 255, 0.5);
       pointer-events: auto;
       position: relative;
       width: 19%;
       float: left;
+      padding-top: 3%;
       padding-left: 1.5%;
       padding-right: 1.5%;
       margin-right: 1.5%;
-      margin-left: 1.5%; }
-      /* line 93, /Users/arron/code/mabreys.com/source/stylesheets/site.css.sass */
+      margin-left: 1.5%;
+      -webkit-transition-property: padding-top, padding-bottom;
+      -moz-transition-property: padding-top, padding-bottom;
+      -o-transition-property: padding-top, padding-bottom;
+      transition-property: padding-top, padding-bottom;
+      -webkit-transition-timing-function: easeInOutQuint;
+      -moz-transition-timing-function: easeInOutQuint;
+      -o-transition-timing-function: easeInOutQuint;
+      transition-timing-function: easeInOutQuint;
+      -webkit-transition-duration: 200ms;
+      -moz-transition-duration: 200ms;
+      -o-transition-duration: 200ms;
+      transition-duration: 200ms; }
+      /* line 101, /Users/arron/code/mabreys.com/source/stylesheets/site.css.sass */
+      .content .mabreys article:hover {
+        padding-top: 1%;
+        padding-bottom: 2%; }
+      /* line 105, /Users/arron/code/mabreys.com/source/stylesheets/site.css.sass */
       .content .mabreys article img {
         width: 100%; }

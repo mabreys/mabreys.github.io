@@ -1,0 +1,44 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700);
+/* line 3, /Users/arron/code/mabreys.com/source/stylesheets/typo.css.scss */
+body {
+  font: 14px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #777;
+  font-weight: 300; }
+
+/* line 10, /Users/arron/code/mabreys.com/source/stylesheets/typo.css.scss */
+h1, h2, h3, h4, h5, h6 {
+  color: #222;
+  margin: 0 0 20px; }
+
+/* line 15, /Users/arron/code/mabreys.com/source/stylesheets/typo.css.scss */
+p, ul, ol, table, pre, dl {
+  margin: 0 0 20px; }
+
+/* line 19, /Users/arron/code/mabreys.com/source/stylesheets/typo.css.scss */
+h1, h2, h3 {
+  line-height: 1.1; }
+
+/* line 23, /Users/arron/code/mabreys.com/source/stylesheets/typo.css.scss */
+h1 {
+  font-size: 28px; }
+
+/* line 27, /Users/arron/code/mabreys.com/source/stylesheets/typo.css.scss */
+h2 {
+  color: white; }
+
+/* line 31, /Users/arron/code/mabreys.com/source/stylesheets/typo.css.scss */
+h3, h4, h5, h6 {
+  color: #494949; }
+
+/* line 35, /Users/arron/code/mabreys.com/source/stylesheets/typo.css.scss */
+a {
+  color: #39c;
+  font-weight: 400;
+  text-decoration: none; }
+
+/* line 42, /Users/arron/code/mabreys.com/source/stylesheets/typo.css.scss */
+a small {
+  font-size: 11px;
+  color: #777;
+  margin-top: -0.6em;
+  display: block; }
