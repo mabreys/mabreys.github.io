@@ -12,6 +12,7 @@ html
     = stylesheet_link_tag "site"
 
   body class=page_classes
-    div.wallpaper
     = yield
+    div.wrapper
+        div.wallpaper
     = javascript_include_tag  "site"

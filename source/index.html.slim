@@ -7,12 +7,14 @@ mabreys:
   - aria
 ---
 
-/ div.content
-/   h1 = current_page.data.title
-/   - MabreyPresenter.each(current_page.data.mabreys) do |mabrey|
-/     article
-/       h2 = mabrey.full_name
-/       img src=mabrey.gravatar
-/       ul
-/         li.twitter = link_to mabrey.twitter_handel, mabrey.twitter_profile
-/         li.email = mail_to mabrey.email
+div.content
+  div.modal-bg
+  / h1 = current_page.data.title
+  div.mabreys
+    - MabreyPresenter.each(current_page.data.mabreys) do |mabrey|
+      article
+        h2 = mabrey.full_name
+        img src=mabrey.gravatar
+        ul
+          li.twitter = link_to mabrey.twitter_handel, mabrey.twitter_profile
+          li.email = mail_to mabrey.email
