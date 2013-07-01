@@ -530,8 +530,8 @@ a {
     zoom: 1;
     position: relative;
     left: 50%;
-    margin-left: -35%;
-    width: 70%; }
+    margin-left: -40%;
+    width: 80%; }
     /* line 3, /Users/arron/code/mabreys.com/source/stylesheets/clearfix.css.scss */
     .content .mabreys:before, .content .mabreys:after {
       content: "\0020";
@@ -570,5 +570,8 @@ a {
         padding-top: 1%;
         padding-bottom: 2%; }
       /* line 105, /Users/arron/code/mabreys.com/source/stylesheets/site.css.sass */
+      .content .mabreys article h2 {
+        white-space: nowrap; }
+      /* line 108, /Users/arron/code/mabreys.com/source/stylesheets/site.css.sass */
       .content .mabreys article img {
         width: 100%; }
