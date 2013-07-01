@@ -1,4 +1,6 @@
 @import compass/css3/transition
+@import compass/css3/filter
+@import compass/css3/transform
 @import normalize
 
 html, body
@@ -11,45 +13,38 @@ html, body
   -webkit-overflow-scrolling: touch
   position: relative
   min-width: 340px
-.wallpaper
-  -webkit-transform: translateZ(0)
-  -moz-transform: translateZ(0)
-  -ms-transform: translateZ(0)
-  -o-transform: translateZ(0)
-  transform: translateZ(0)
 
+.wallpaper
+  +translateZ(0)
   font-size: 320px
-  width: 130%
+  width: 100%
   position: absolute
   padding: 3px
-  // @media screen and (min-width: 600px)
-  //   background-color: red
-  //   width: 110%
   @media screen and (min-width: 800px)
-    // background-color: green
     width: 103%
 
   img
+    +translateZ(0)
     display: block
     float: left
     margin-top: 5px
     margin-bottom: 5px
     margin-right: 5px
     margin-left: 5px
-    // margin: 5px 5px
     padding: 0
-    // width: 1em
-    // height: 1em
-img
-  &.is-loading
-    opacity: 0
-  &.is-loaded
-    opacity: 1
-    @include transition-property(opacity)
-    @include transition-duration(250ms)
-    @include transition-timing-function(ease-in)
-    // transition: opacity .25s ease-in
+    +transition-property(opacity)
+    +transition-timing-function(easeInOutQuint)
 
+    &.is-loading
+      opacity: 0
+    &.is-loaded
+      opacity: 0.6
+      +transition-duration(2600ms)
+      +filter(contrast(1.5) grayscale(100%))
+      &:hover
+        opacity: 0.9
+        +filter(contrast(1.6) grayscale(40%))
+        +transition-duration(1000ms)
 .content
   position: relative
   article
