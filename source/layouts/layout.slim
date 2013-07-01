@@ -7,10 +7,11 @@ html
     meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"
 
     / Use title if it's in the page YAML frontmatter
-    title  = current_page.data.title || "The Middleman"
+    title  = current_page.data.title || "The Mabreys"
 
-    = stylesheet_link_tag "application"
-    = javascript_include_tag  "all"
+    = stylesheet_link_tag "site"
 
   body class=page_classes
+    div.wallpaper
     = yield
+    = javascript_include_tag  "site"

@@ -1,3 +1,5 @@
+require 'lib/mabrey_presenter'
+
 ###
 # Compass
 ###
