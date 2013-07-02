@@ -10,7 +10,7 @@ html
     / Use title if it's in the page YAML frontmatter
     title  = current_page.data.title || "The Mabreys"
 
-    = stylesheet_link_tag "site"
+    = stylesheet_link_tag "site", "//fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700"
 
   body class=page_classes
     = yield
