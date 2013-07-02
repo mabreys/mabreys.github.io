@@ -16,5 +16,9 @@ div.content
         h2 = mabrey.full_name
         img src=mabrey.gravatar
         ul
-          li.twitter = link_to mabrey.twitter_handel, mabrey.twitter_profile
+          li.twitter = link_to mabrey.twitter_handel, mabrey.twitter_profile, target: "_blank"
           li.email = mail_to mabrey.email
+          - if mabrey.email == 'arron@mabreys.com'
+            li.website = link_to "arronmabrey.com", "http://arronmabrey.com", target: "_blank"
+          - else
+            li &nbsp;
