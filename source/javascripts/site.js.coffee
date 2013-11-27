@@ -40,7 +40,7 @@ jQuery ->
     user_id:  "74505510@N00"
     method:   "flickr.people.getPublicPhotos"
     extras:   "url_n"
-    per_page: "100"
+    per_page: "500"
 
   flickrAPI.getPhotos (photo) ->
     index = photos.length
