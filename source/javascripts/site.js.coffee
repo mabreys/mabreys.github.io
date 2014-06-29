@@ -4,7 +4,7 @@
 class FlickrAPI
   constructor: (@options) ->
 
-  url: -> "http://api.flickr.com/services/rest/?#{$.param(@options)}&format=json&jsoncallback=?"
+  url: -> "https://api.flickr.com/services/rest/?#{$.param(@options)}&format=json&jsoncallback=?"
 
   getPhotos: (callback) ->
     $.getJSON @url(), (data) =>
