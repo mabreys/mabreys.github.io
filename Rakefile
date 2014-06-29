@@ -97,6 +97,10 @@ namespace :deploy do
     end
 
     rm_rf PUBLISH_DIR
+
+    system "git checkout #{PUBLISH_BRANCH}"
+    system "git pull --ff-only"
+    system "git checkout #{DEVELOP_BRANCH}"
   end
 
 
