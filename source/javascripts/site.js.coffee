@@ -12,17 +12,18 @@ class FlickrAPI
 
 class flickrPhoto
   constructor: (@data) ->
-    @el = @build_el()
-    @width  = parseInt(@data.width_n)
-    @height = parseInt(@data.height_n)
-    @ratio  = @width / @height
+    @img_url = @data.url_n
+    @el      = @build_el()
+    @width   = parseInt(@data.width_n)
+    @height  = parseInt(@data.height_n)
+    @ratio   = @width / @height
 
   resize: (height)->
      @el.attr('height', height)
      @el.attr('width', Math.floor(@ratio * height))
 
   build_el: ->
-    $("<img class='is-loading' src='#{@data.url_n}'>").data('flickrPhoto', @)
+    $("<img class='is-loading' src='#{@img_url}'>").data('flickrPhoto', @) if @img_url
 
 jQuery ->
   photos           = []
@@ -43,6 +44,8 @@ jQuery ->
     per_page: "500"
 
   flickrAPI.getPhotos (photo) ->
+    return unless photo.el
+
     index = photos.length
     photos.push(photo)
     photo.el.appendTo $wallpaper
