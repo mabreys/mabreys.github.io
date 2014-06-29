@@ -95,6 +95,8 @@ namespace :deploy do
       system "git commit -m 'Site built at #{Time.now.utc} from #{develop_branch} ref #{develop_branch_sha}'"
       system "git push #{git_remote} #{PUBLISH_BRANCH}"
     end
+
+    rm_rf PUBLISH_DIR
   end
 
 
